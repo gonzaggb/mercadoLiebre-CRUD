@@ -43,6 +43,17 @@ module.exports = {
         this.writeFile(productsNew)
 
     },
+    generateId(){
+        return this.readFile().pop.id + 1
+
+    },
+    create(newProduct){
+        const products = this.readFile()
+        newProduct.id = this.generateId
+        newProductsList = [...products, newProduct]
+        this.writeFile(newProductsList)
+
+    },
     delete(id){
         const products = this.readFile()
         const productsNew = products.filter(e => e.id != id)

@@ -7,28 +7,40 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const controller = {
 	// Root - Show all products
 	index: (req, res) => {
-		const products = productModel.findAll()
-		console.log(products)
+		const products = {
+		productsList: productModel.findAll(),
+		toThousand
+		}
+		console.log(products.productsList)
 		res.render('products.ejs', {products} )
 	},
 
 	// Detail - Detail from one product
 	detail: (req, res) => {
 		const id = req.params.id
-		const productDetail = productModel.findByPk(id)
-		console.log(productDetail)
+		const productDetail = {
+			productById: productModel.findByPk(id),
+			toThousand
+		}
+		console.log(productDetail.productById)
 		res.render('detail.ejs', {productDetail})
 		// Do the magic
 	},
 
 	// Create - Form to create
 	create: (req, res) => {
+		res.render('product-create-form')
 		// Do the magic
 	},
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		// Do the magic
+		console.log("entre al controlador")
+		const newData = req.body
+		const { file } = req
+		newData.image = file.filename
+		productModel.create(newData)
+		res.redirect('products')
 	},
 
 	// Update - Form to edit
@@ -39,18 +51,20 @@ const controller = {
 	},
 	// Update - Method to update
 	update: (req, res) => {
-		console.log("ingreso al update del controller")
-		const {name, description, price, discount, image, category} = req.body
-		productToUpdate ={
-			name,
-			description,
-			price: Number(price),
-			discount: Number(discount),
-			image,
-			category
-		}
+		const data = req.body
+		const productToEdit = productModel.findByPk(req.params.id)
+		const { file } = req
+		let image
+		if(file){
+			image = file.filename
+		}else{
+			image = productToEdit.image
+		} 
+		data.image = image
+		data.price = Number (data.price)
+		data.discount = Number (data.discount)
 		const id = req.params.id
-		productModel.update(productToUpdate, id) 
+		productModel.update(data, id) 
 		res.redirect('/')
 	},
 

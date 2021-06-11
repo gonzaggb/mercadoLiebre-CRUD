@@ -2,8 +2,8 @@
   {
     "id": 1,
     "name": "Cafetera Moulinex Dolce Gusto Edited",
-    "price": 15001,
-    "discount": 51,
+    "price": 100,
+    "discount": 50,
     "category": "visited",
     "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
     "image": "img-cafetera-moulinex.jpg"
@@ -14,7 +14,7 @@
     "price": 500,
     "discount": 3,
     "category": "in-sale",
-    "description": "Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD Pantalla 13.3' Retina Apple Nueva Original. Importada de USA. Se entrega con la factura de compra para contar con la garantía del fabricante",
+    "description": "Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD Pantalla 13.3\" Retina Apple Nueva Original. Importada de USA. Se entrega con la factura de compra para contar con la garantía del fabricante",
     "image": "img-macbook-pro-2019.jpg"
   },
   {
@@ -38,29 +38,29 @@
   {
     "id": 5,
     "name": "Nikon Reflex D3500 - Kit",
-    "price": "64000",
-    "discount": "20",
-    "category": "in-sale",
     "description": "Incluye la cámara D3500, el objetivo zoom AF-P DX NIKKOR 18-55mm y el superteleobjetivo zoom compacto AF-P DX NIKKOR 70-300mm. Ambos objetivos enfocan de forma rápida y silenciosa, lo que resulta ideal para grabar metraje de vídeo sin que se escuche apenas el ruido del accionamiento.",
-    "image": "img-camara-nikon.jpg"
+    "price": 53000,
+    "discount": 20,
+    "image": "img-camara-nikon.jpg",
+    "category": "in-sale"
   },
   {
     "id": 6,
     "name": "Aire Acondicionado 3200w Frio / Calor",
-    "price": "45000",
-    "discount": "12",
-    "category": "in-sale",
     "description": "AIRE SPLIT 3200W TACA-3200WCHSA/KC FC TCL. Capacidad frio 3200 Watts. Capacidad calor 3300 Watts. Potencia Electrica(W)frio 996. Potencia Electrica(W)calor 1028. Eficiencia energética calor C. Eficiencia energética frio A. Frigorias 2750 UNIDAD INTERIOR. Peso Bruto 10kg. Peso Neto 7 kg",
-    "image": "img-aire-acondicionado.jpg"
+    "price": 20999,
+    "discount": 12,
+    "image": "img-aire-acondicionado.jpg",
+    "category": "in-sale"
   },
   {
     "id": 7,
     "name": "Notebook Lenovo I3 Intel 8gb Ram",
-    "price": "36700",
-    "discount": "25",
-    "category": "in-sale",
     "description": "PROCESADOR / CHIPSET. CPU: Intel Core i3(8a generación) 8130U / 2.2 GHz. Velocidad turbo máxima: 3, 4 GHz. Numero de núcleos: Doble núcleo. Cache: 4 MB. Arquitectura de 64 bit: ss. MEMORIA CACHÉ. Tamaño instalada: 4 MB. ALMACENAMIENTO. Interfaz Serial ATA - 600",
-    "image": "img-laptop-lenovo.jpg"
+    "price": 36700,
+    "discount": 5,
+    "image": "img-laptop-lenovo.jpg",
+    "category": "in-sale"
   },
   {
     "id": 8,
@@ -142,6 +142,13 @@
     "category": "in-sale",
     "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
     "image": "img-parlante-sony.jpg"
+  },
+  {
+    "name": "producto de prueba",
+    "price": "1234",
+    "discount": "10",
+    "category": "in-sale",
+    "description": "esta es una carga de prueba",
+    "image": "1623432809215.jpeg"
   }
-
 ]
